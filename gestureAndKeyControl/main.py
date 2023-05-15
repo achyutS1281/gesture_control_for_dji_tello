@@ -4,8 +4,10 @@ import configargparse
 
 import cv2 as cv
 
+from gestureAndKeyControl.gestures.gesture_recognition import GestureRecognition, GestureBuffer
+from gestureAndKeyControl.gestures.tello_keyboard_controller import TelloKeyboardController
 from gestures.tello_gesture_controller import TelloGestureController
-from utils import CvFpsCalc
+from gestureAndKeyControl.utils.cvfpscalc import CvFpsCalc
 
 from djitellopy import Tello
 from gestures import *
